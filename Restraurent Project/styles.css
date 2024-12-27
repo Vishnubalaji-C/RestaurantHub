@@ -1,0 +1,370 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #fafafa;
+}
+
+/* Home Page */
+.home-section {
+    padding: 50px;
+    background: url('home-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 1.5em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d64c33;
+}
+
+/* About Us */
+.about-section {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    text-align: center;
+}
+
+/* Menu */
+.menu-section {
+    padding: 20px;
+    text-align: center;
+    background: #161616;
+}
+
+.menu-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.menu-section .dish-item {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+}
+
+.menu-section img {
+    width: 0%;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-section .dish-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #030303;
+}
+
+/* Online Orders */
+.orders-section {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.orders-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.orders-section form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.orders-section label, .orders-section input, .orders-section select, .orders-section button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.orders-section input, .orders-section select {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.orders-section button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.orders-section button:hover {
+    background-color: #ff6347;
+}
+
+/* Lodging */
+.lodging-section {
+    background: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+.lodging-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.lodging-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.lodging-section input, .lodging-section button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.lodging-section input[type="date"] {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.lodging-section button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.lodging-section button:hover {
+    background-color: #ff6347;
+}
+
+/* Contact Us */
+.contact-section {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-section ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-section ul li i {
+    margin-right: 10px;
+}
+
+/* Rating */
+.rating-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.rating-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.stars {
+    display: cover;
+    justify-content: center;
+    gap: 10px;
+}
+
+.star {
+    font-size: 2em;
+    color: #703de7;
+    cursor: pointer;
+}
+
+/* Login Page */
+.login-section {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.login-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-section label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.login-section input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
+.login-section button {
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-section button:hover {
+    background-color: #ff6347;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-section h1 {
+        font-size: 2em;
+    }
+
+    .home-section p {
+        font-size: 1.2em;
+    }
+
+    .menu-section .dish-item {
+        width: 100%;
+    }
+
+    .orders-section, .lodging-section, .contact-section, .rating-section {
+        padding: 20px;
+    }
+
+    .login-section {
+        width: 10%;
+        padding: 20px;
+    }
+
+    .contact-section ul li {
+        font-size: 1em;
+    }
+
+    .stars {
+        flex-direction: column;
+    }
+
+    .star {
+        font-size: 1.5em;
+    }
+}

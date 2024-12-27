@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <div style="background-image: url('rating01-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    color: rgb(255, 255, 255); 
+    padding: 40px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;"> <!-- Link to your CSS file -->
+    <style>
+        .stars {
+            display: cover;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .star {
+            font-size: 2em;
+            color: #703de7;
+            cursor: pointer;
+        }
+
+        .submit-rating {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #703de7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .submit-rating:hover {
+            background-color: #703de7;
+        }
+    </style>
+</head>
+<body>
+
+<div class="rating-section">
+    <h2 style="color: #703de7;">Rate Our Service</h2>
+    <div class="stars" id="starContainer">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+    </div>
+    <button class="submit-rating" id="submitRating">Submit Rating</button>
+</div>
+
+<script>
+    // Rating Functionality
+    const stars = document.querySelectorAll('.star');
+    let rating = 0;
+
+    stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            rating = index + 1;
+            updateStars();
+        });
+    });
+
+    function updateStars() {
+        stars.forEach((star, index) => {
+            if (index < rating) {
+                star.style.color = "#703de7"; // selected star color
+            } else {
+                star.style.color = "white"; // unselected star color
+            }
+        });
+    }
+
+    document.getElementById('submitRating').addEventListener('click', () => {
+        alert(`You rated ${rating} stars. Thank you for your feedback!`);
+    });
+</script>
+<footer class="footer">
+    <p>&copy; 2024 CuisineCove. All Rights Reserved. | <a href="rating.html">Rate Us</a></p>
+</footer>
+
+</body>
+</html>

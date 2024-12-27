@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Orders | CuisineCove</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-orders">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="orders.html">Online Orders</a></li>
+                <li><a href="lodging.html">Lodging</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="rating.html">Rating</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="orders-section">
+            <div style="background-image: url('order1.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            min-height: 100vh; 
+            color: rgb(19, 12, 12); 
+            padding: 40px;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;">
+            <h2>Order Your Meal</h2>
+            <form id="order-form">
+                <label for="dish"><h1>Choose a Dish:</label><h1></label>
+                <select id="dish" name="dish">
+                    <option value="veg-biryani">Vegetarian Biryani</option>
+                    <option value="chicken-biryani">Chicken Biryani</option>
+                    <option value="mutton-biryani">Mutton Biryani</option>
+                </select>
+                <label for="quantity"><h1>Quantity:</h1></label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">Order Now</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 CuisineCove. All Rights Reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
